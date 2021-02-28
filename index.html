@@ -1,0 +1,222 @@
+<html><head><title>Hacked P-M@N  ./DivXploit</title></head><body><br>
+<style type="text/css">body{background:url(https://3.bp.blogspot.com/-5Ma3lIrkPCk/W5p-c6bBmsI/AAAAAAAAALw/Gh-OIZLSiJc3QRCyShSytMNAtpUQoSSXQCLcBGAs/s320/Gambar%2BAnimasi%2BPetir%2BBergerak%2BWallpaper%2BKilat%2BMerah%2BLuar%2BBiasa.gif) repeat center center fixed black;}</style>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
+<body bgcolor="#000000" background =><div class='CenterDiv'><center><SCRIPT>
+
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
+farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00"); 
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[6] = new Array("#33CCFF","#33CCCC","#33CC99","#33CC66","#33CC33","#33CC00"); 
+farbbibliothek[7] = new Array("#00dbdb","#00afdb","#0083db","#0058db","#002cdb","#2c00db","#5800db","#8300db","#af00db","#db00db"); 
+farbbibliothek[8] = new Array("#ffd8f4","#ffcff2","#ffc6f0","#ffbded","#ffb4eb","#ffabe8","#ffa2e6","#ff99e3","#ff90e1","#ff87de","#ff7edc","#ff75d9","#ff6cd7","#ff63d5","#ff5ad3","#ff51d1","#ff48cf","#ff3fcd","#ff36cb","#ff2dc9","#ff24c7","#ff1bc5","#ff12c3","#ff09c1","#f600b8","#ed00b1","#e400aa","#db00a3","#d2009c","#c90095","#c0008e","#b70087","#ae0080","#a50079","#9c0072","#93006b","#8a0064","#81005d","#780056","#6f004f","#660048","#5d0042","#54003b","#4b0035","#42002f","#390028","#300022","#27001b"); 
+farben = farbbibliothek[4];
+function farbschrift() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<b><font face='jolly lodger' size='40' color='hotpink'></a><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font></b>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+ 
+setTimeout("farbschrift()",30); 
+} 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= '<[ hacked by P-M@N Koi Orang Bolok]>';
+</script><span class='newclass'>
+<script type="text/javascript">
+string2array(text); 
+divserzeugen();
+</script></span>
+
+<center><img src=https://www.optimum7.com/wp-content/uploads/2019/10/hacked-1014x487.jpg width=450px height=340px>
+<body onload="init()"></body>
+<script type="text/javascript">
+// Hacked By : CopyRight404rgr
+TypingText = function(element, interval, cursor, finishedCallback) {
+if((typeof document.getElementById == "undefined") || (typeof
+
+element.innerHTML == "undefined")) {
+this.running = true;
+return;
+}
+this.element = element;
+this.finishedCallback = (finishedCallback ? finishedCallback : function() {
+
+return; });
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+this.origText = this.element.innerHTML;
+this.unparsedOrigText = this.origText;
+this.cursor = (cursor ? cursor : "");
+this.currentText = "";
+this.currentChar = 0;
+this.element.typingText = this;
+if(this.element.id == "") this.element.id = "typingtext" +
+
+TypingText.currentIndex++;
+TypingText.all.push(this);
+this.running = false;
+this.inTag = false;
+this.tagBuffer = "";
+this.inHTMLEntity = false;
+this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+if(this.running) return;
+if(typeof this.origText == "undefined") {
+setTimeout("document.getElementById('" + this.element.id +
+
+"').typingText.run()", this.interval);
+return;
+}
+if(this.currentText == "") this.element.innerHTML = "";
+if(this.currentChar < this.origText.length) {
+if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+this.tagBuffer = "<";
+this.inTag = true;
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+this.tagBuffer += ">";
+this.inTag = false;
+this.currentText += this.tagBuffer;
+this.currentChar++;
+this.run();
+return;
+} else if(this.inTag) {
+this.tagBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == "&" && !
+
+this.inHTMLEntity) {
+this.HTMLEntityBuffer = "&";
+this.inHTMLEntity = true;
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == ";" &&
+
+this.inHTMLEntity) {
+this.HTMLEntityBuffer += ";";
+this.inHTMLEntity = false;
+this.currentText += this.HTMLEntityBuffer;
+this.currentChar++;
+this.run();
+return;
+} else if(this.inHTMLEntity) {
+this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+} else {
+this.currentText += this.origText.charAt(this.currentChar);
+}
+this.element.innerHTML = this.currentText;
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ?
+
+(typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) :
+
+"");
+this.currentChar++;
+setTimeout("document.getElementById('" + this.element.id +
+
+"').typingText.run()", this.interval);
+} else {
+this.currentText = "";
+this.currentChar = 0;
+this.running = false;
+this.finishedCallback();
+}
+}
+</script>
+
+<!-- AdFender script begin --><script type='text/javascript' src='http://local.adfender.com/adfender/elemhide.js'></script><!-- AdFender script end -->
+<!-- AdFender script begin --><script type='text/javascript' src='http://local.adfender.com/adfender/elemhide.js'></script><!-- AdFender script end -->
+</head>
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false' onselectstart='return false' style='-moz-user-select: none; cursor: default;'>
+<br/>
+<div id="wrapper">
+<div class="box">
+<center></font><font color="#00BFFF" size="5px"> <br>                      Message: 
+<div id="console"><span class="prefix">
+<p id="message">
+
+</font><font color="#00BFFF" size="4px">Sory kawan <b> tak ada keje sekarang <b> saja aku test skill<script type="text/javascript">
+new TypingText(document.getElementById("message"), 50, function(i){ var ar
+
+= new Array("|", "|", "|", "|"); return " " + ar[i.length % ar.length]; });
+
+//Type out examples:
+TypingText.runAll();
+</script>
+<input text="test" id="commander" onkeyup="execute(this,event);" disabled="disabled" style="width:786px;"/>
+</div>
+<div class="spacer"></div></center>
+
+
+<!-- CSS --><style>
+.CenterDiv{width:650px;border:1px #ff0000 solid;padding:5px;margin:0px auto; background: url('https://3.bp.blogspot.com/-5Ma3lIrkPCk/W5p-c6bBmsI/AAAAAAAAALw/Gh-OIZLSiJc3QRCyShSytMNAtpUQoSSXQCLcBGAs/s320/Gambar%2BAnimasi%2BPetir%2BBergerak%2BWallpaper%2BKilat%2BMerah%2BLuar%2BBiasa.gif');}
+</style><br><br></div><br>
+
+<center><marquee behavior="scroll" direction="left" scrollamount="100" scrolldelay="40" width="100%"> <font color="gold">___________________________________________________________</font></marquee>
+
+
+<marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="20" width="50%">
+<FONT face="Tahoma" size="4" color="##00FF00">Maaf la Ya (Koi Orang Bolok)</FONT>
+</b></marquee><marquee behavior="scroll" direction="right" scrollamount="100" scrolldelay="40" width="100%"> 
+<font color="gold">___________________________________________________________</font></marquee>
+<iframe width="0" height="0" src="https://api.soundcloud.com/tracks/312530137/stream?client_id=a3e059563d7fd3372b49b37f00a00bcf" frameborder="0" allowfullscreen></iframe>
