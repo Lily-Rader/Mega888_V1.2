@@ -1,1 +1,736 @@
-
+{
+    "packageUrl": "",
+    "remoteManifestUrl": "",
+    "version": "49",
+    "engineVersion": "V3.3",
+    "assets": {
+        "res/.nomedia": {
+            "md5": "2212294583",
+            "size": 1
+        },
+        "res/Data/Common/Default.png": {
+            "md5": "1276811277",
+            "size": 1787
+        },
+        "res/Data/Common/GameMenuBtn.plist": {
+            "md5": "3480945904",
+            "size": 1695
+        },
+        "res/Data/Common/GameMenuBtn.png": {
+            "md5": "3899429864",
+            "size": 4215
+        },
+        "res/Data/Common/HelpPage.plist": {
+            "md5": "3703047333",
+            "size": 5331
+        },
+        "res/Data/Common/HelpPage.png": {
+            "md5": "1376393160",
+            "size": 3571
+        },
+        "res/Data/Common/Quckcler.csb": {
+            "md5": "796710775",
+            "size": 2847
+        },
+        "res/Data/Common/En/GameMenu.plist": {
+            "md5": "518642388",
+            "size": 11527
+        },
+        "res/Data/Common/En/GameMenu.png": {
+            "md5": "1445010353",
+            "size": 110623
+        },
+        "res/Data/Common/LobbyBigGaming/ModalDlg.plist": {
+            "md5": "3253613501",
+            "size": 8659
+        },
+        "res/Data/Common/LobbyBigGaming/ModalDlg.png": {
+            "md5": "1962971666",
+            "size": 326339
+        },
+        "res/Data/Common/LobbyBigGaming/En/Loading.plist": {
+            "md5": "2395801249",
+            "size": 1695
+        },
+        "res/Data/Common/LobbyBigGaming/En/Loading.png": {
+            "md5": "1988811663",
+            "size": 1249855
+        },
+        "res/Data/LobbyBigGaming/BGLayer.csb": {
+            "md5": "592011739",
+            "size": 14107
+        },
+        "res/Data/LobbyBigGaming/BGLayerC.csb": {
+            "md5": "3426021123",
+            "size": 15423
+        },
+        "res/Data/LobbyBigGaming/Bonus1.plist": {
+            "md5": "2256898036",
+            "size": 26159
+        },
+        "res/Data/LobbyBigGaming/Bonus1.png": {
+            "md5": "1278634555",
+            "size": 282443
+        },
+        "res/Data/LobbyBigGaming/IconNum.fnt": {
+            "md5": "2881723067",
+            "size": 1555
+        },
+        "res/Data/LobbyBigGaming/IconNum.png": {
+            "md5": "2296991742",
+            "size": 1651
+        },
+        "res/Data/LobbyBigGaming/Login.csb": {
+            "md5": "444017697",
+            "size": 5811
+        },
+        "res/Data/LobbyBigGaming/Login.plist": {
+            "md5": "2255727977",
+            "size": 11455
+        },
+        "res/Data/LobbyBigGaming/Login.png": {
+            "md5": "2925075906",
+            "size": 120283
+        },
+        "res/Data/LobbyBigGaming/Logo0.plist": {
+            "md5": "353343719",
+            "size": 31371
+        },
+        "res/Data/LobbyBigGaming/Logo0.png": {
+            "md5": "2332343637",
+            "size": 3523023
+        },
+        "res/Data/LobbyBigGaming/Logo1.plist": {
+            "md5": "1792746912",
+            "size": 20507
+        },
+        "res/Data/LobbyBigGaming/Logo1.png": {
+            "md5": "2161851768",
+            "size": 1927407
+        },
+        "res/Data/LobbyBigGaming/Logo2.plist": {
+            "md5": "1801270381",
+            "size": 17235
+        },
+        "res/Data/LobbyBigGaming/Logo2.png": {
+            "md5": "713711430",
+            "size": 1014975
+        },
+        "res/Data/LobbyBigGaming/Reconnect.csb": {
+            "md5": "745180803",
+            "size": 6655
+        },
+        "res/Data/LobbyBigGaming/WinBonus1.plist": {
+            "md5": "1753179915",
+            "size": 16371
+        },
+        "res/Data/LobbyBigGaming/WinBonus1.png": {
+            "md5": "3558332969",
+            "size": 2593127
+        },
+        "res/Data/LobbyBigGaming/En/Bonus.plist": {
+            "md5": "3374574173",
+            "size": 48023
+        },
+        "res/Data/LobbyBigGaming/En/Bonus.png": {
+            "md5": "1239680880",
+            "size": 2554315
+        },
+        "res/Data/LobbyBigGaming/En/BonusBG.plist": {
+            "md5": "1113265519",
+            "size": 1695
+        },
+        "res/Data/LobbyBigGaming/En/BonusBG.png": {
+            "md5": "301538917",
+            "size": 116243
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon.plist": {
+            "md5": "1476440361",
+            "size": 2603
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon.png": {
+            "md5": "1574381104",
+            "size": 25935
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon0.plist": {
+            "md5": "3120229359",
+            "size": 38835
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon0.png": {
+            "md5": "326941022",
+            "size": 7585615
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon1.plist": {
+            "md5": "1818467195",
+            "size": 38815
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon1.png": {
+            "md5": "2023407555",
+            "size": 7547555
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon2.plist": {
+            "md5": "4224576369",
+            "size": 38899
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon2.png": {
+            "md5": "400680492",
+            "size": 7531639
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon3.plist": {
+            "md5": "1679428302",
+            "size": 35935
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon3.png": {
+            "md5": "3903558115",
+            "size": 7421107
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon4.plist": {
+            "md5": "938208224",
+            "size": 24491
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon4.png": {
+            "md5": "1407620621",
+            "size": 5534951
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon5.plist": {
+            "md5": "1817762922",
+            "size": 28223
+        },
+        "res/Data/LobbyBigGaming/En/GameIcon5.png": {
+            "md5": "2751853968",
+            "size": 1433043
+        },
+        "res/Data/LobbyBigGaming/En/Lobby.plist": {
+            "md5": "3336255994",
+            "size": 19155
+        },
+        "res/Data/LobbyBigGaming/En/Lobby.png": {
+            "md5": "712971928",
+            "size": 385335
+        },
+        "res/Data/LobbyBigGaming/En/Lobby3.plist": {
+            "md5": "2116001991",
+            "size": 1683
+        },
+        "res/Data/LobbyBigGaming/En/Lobby3.png": {
+            "md5": "2721491112",
+            "size": 31451
+        },
+        "res/Data/LobbyBigGaming/En/LobbyMenu.plist": {
+            "md5": "272118359",
+            "size": 7863
+        },
+        "res/Data/LobbyBigGaming/En/LobbyMenu.png": {
+            "md5": "1037056320",
+            "size": 200699
+        },
+        "res/Data/LobbyBigGaming/En/LobbyRed.plist": {
+            "md5": "2026136330",
+            "size": 3107
+        },
+        "res/Data/LobbyBigGaming/En/LobbyRed.png": {
+            "md5": "4221775012",
+            "size": 1305187
+        },
+        "res/Data/LobbyBigGaming/En/Login1.plist": {
+            "md5": "3144977713",
+            "size": 10143
+        },
+        "res/Data/LobbyBigGaming/En/Login1.png": {
+            "md5": "693361160",
+            "size": 1147383
+        },
+        "res/Data/LobbyBigGaming/En/Notice.plist": {
+            "md5": "2728120534",
+            "size": 10607
+        },
+        "res/Data/LobbyBigGaming/En/Notice.png": {
+            "md5": "576511572",
+            "size": 258603
+        },
+        "res/Data/LobbyBigGaming/En/reconnect.plist": {
+            "md5": "169343814",
+            "size": 19431
+        },
+        "res/Data/LobbyBigGaming/En/reconnect.png": {
+            "md5": "3133216772",
+            "size": 306059
+        },
+        "res/Data/LobbyBigGaming/En/WinBonus.plist": {
+            "md5": "2340456010",
+            "size": 15071
+        },
+        "res/Data/LobbyBigGaming/En/WinBonus.png": {
+            "md5": "2271524469",
+            "size": 3305927
+        },
+        "res/Music/Common/Jackpot.ogg": {
+            "md5": "3568271129",
+            "size": 297993
+        },
+        "res/Music/Common/NewXiFen.ogg": {
+            "md5": "1654135864",
+            "size": 20607
+        },
+        "res/Music/Common/WZxifen.ogg": {
+            "md5": "3660721319",
+            "size": 83081
+        },
+        "res/Music/LobbyBigGaming/ddq.mp3": {
+            "md5": "1026828010",
+            "size": 144509
+        },
+        "res/Music/LobbyBigGaming/LobbyClick.mp3": {
+            "md5": "24873787",
+            "size": 13998
+        },
+        "res/Music/LobbyBigGaming/LobbyClick1.mp3": {
+            "md5": "1263419637",
+            "size": 15362
+        },
+        "res/Music/LobbyBigGaming/LobbyMusic01.mp3": {
+            "md5": "3755937456",
+            "size": 477262
+        },
+        "res/Music/LobbyBigGaming/LobbyMusic02.mp3": {
+            "md5": "4037960169",
+            "size": 307792
+        },
+        "res/Music/LobbyBigGaming/LobbyMusic06.mp3": {
+            "md5": "3092734082",
+            "size": 285338
+        },
+        "res/fonts/arial.ttf": {
+            "md5": "2590945850",
+            "size": 778552
+        },
+        "res/fonts/SIMHEI.TTF": {
+            "md5": "1299516851",
+            "size": 9751960
+        },
+        "res/fonts/WinBonusNum.fnt": {
+            "md5": "1721919048",
+            "size": 1559
+        },
+        "res/fonts/WinBonusNum.png": {
+            "md5": "2478157748",
+            "size": 19727
+        },
+        "res/fonts/LobbyBigGaming/LobbyBonus.fnt": {
+            "md5": "3342876655",
+            "size": 1443
+        },
+        "res/fonts/LobbyBigGaming/LobbyBonus.png": {
+            "md5": "378493787",
+            "size": 12927
+        },
+        "res/fonts/LobbyBigGaming/LobbyBonus1.fnt": {
+            "md5": "113174148",
+            "size": 1447
+        },
+        "res/fonts/LobbyBigGaming/LobbyBonus1.png": {
+            "md5": "3589310429",
+            "size": 10567
+        },
+        "res/fonts/LobbyBigGaming/LobbyMoney.fnt": {
+            "md5": "3285760195",
+            "size": 1555
+        },
+        "res/fonts/LobbyBigGaming/LobbyMoney.png": {
+            "md5": "4149478212",
+            "size": 1767
+        },
+        "res/fonts/LobbyBigGaming/LobbyRedNum.fnt": {
+            "md5": "3056489862",
+            "size": 1559
+        },
+        "res/fonts/LobbyBigGaming/LobbyRedNum.png": {
+            "md5": "1289845452",
+            "size": 34211
+        },
+        "res/fonts/LobbyBigGaming/WinBonus1.fnt": {
+            "md5": "650552467",
+            "size": 1443
+        },
+        "res/fonts/LobbyBigGaming/WinBonus1.png": {
+            "md5": "2041993836",
+            "size": 24583
+        },
+        "res/fonts/LobbyBigGaming/WinBonus2.fnt": {
+            "md5": "970791587",
+            "size": 1443
+        },
+        "res/fonts/LobbyBigGaming/WinBonus2.png": {
+            "md5": "219462637",
+            "size": 20283
+        },
+        "src/.nomedia": {
+            "md5": "2212294583",
+            "size": 1
+        },
+        "src/mainEntryBG.luac": {
+            "md5": "2577426429",
+            "size": 4872
+        },
+        "src/Config/LobbyBigGamingConfig.luac": {
+            "md5": "1751842816",
+            "size": 1872
+        },
+        "src/LobbyBigGaming/AppUpdate.luac": {
+            "md5": "3438906128",
+            "size": 2492
+        },
+        "src/LobbyBigGaming/GameConfig.luac": {
+            "md5": "3851662488",
+            "size": 58432
+        },
+        "src/LobbyBigGaming/GameLoader.luac": {
+            "md5": "2033722044",
+            "size": 7608
+        },
+        "src/LobbyBigGaming/LiveScene.luac": {
+            "md5": "3598856835",
+            "size": 1740
+        },
+        "src/LobbyBigGaming/LobbyBonus.luac": {
+            "md5": "69681050",
+            "size": 11136
+        },
+        "src/LobbyBigGaming/LobbyButton.luac": {
+            "md5": "1827458024",
+            "size": 1092
+        },
+        "src/LobbyBigGaming/LobbyData.luac": {
+            "md5": "1321957421",
+            "size": 1072
+        },
+        "src/LobbyBigGaming/LobbyData2.luac": {
+            "md5": "3432030174",
+            "size": 1360
+        },
+        "src/LobbyBigGaming/LobbyDef.luac": {
+            "md5": "3832897953",
+            "size": 1128
+        },
+        "src/LobbyBigGaming/LobbyGlobal.luac": {
+            "md5": "1636658439",
+            "size": 1320
+        },
+        "src/LobbyBigGaming/LobbyLogo.luac": {
+            "md5": "1305495717",
+            "size": 964
+        },
+        "src/LobbyBigGaming/LobbyMenu.luac": {
+            "md5": "2796091798",
+            "size": 6916
+        },
+        "src/LobbyBigGaming/LobbyNet.luac": {
+            "md5": "1080484374",
+            "size": 7852
+        },
+        "src/LobbyBigGaming/LobbyPrize.luac": {
+            "md5": "453860036",
+            "size": 1300
+        },
+        "src/LobbyBigGaming/LobbyScene.luac": {
+            "md5": "137845182",
+            "size": 46524
+        },
+        "src/LobbyBigGaming/LobbyText.luac": {
+            "md5": "3808963224",
+            "size": 2288
+        },
+        "src/LobbyBigGaming/LobbyUpdate.luac": {
+            "md5": "560409212",
+            "size": 7376
+        },
+        "src/LobbyBigGaming/LoginScene.luac": {
+            "md5": "1973663023",
+            "size": 19692
+        },
+        "src/LobbyBigGaming/Notice.luac": {
+            "md5": "382218843",
+            "size": 9992
+        },
+        "src/LobbyBigGaming/PatchConfig.luac": {
+            "md5": "3392494907",
+            "size": 456
+        },
+        "src/LobbyBigGaming/Reconnect.luac": {
+            "md5": "1974648070",
+            "size": 2568
+        },
+        "src/LobbyBigGaming/RedPacket.luac": {
+            "md5": "1250241643",
+            "size": 4172
+        },
+        "src/LobbyBigGaming/ShareQR.luac": {
+            "md5": "1713977440",
+            "size": 2984
+        },
+        "src/LobbyBigGaming/Transmitter.luac": {
+            "md5": "2301441493",
+            "size": 8404
+        },
+        "src/LobbyBigGaming/Update.luac": {
+            "md5": "2906071679",
+            "size": 5148
+        },
+        "src/MutilLobby/BacItem.luac": {
+            "md5": "3407548083",
+            "size": 2356
+        },
+        "src/MutilLobby/BWItem.luac": {
+            "md5": "752053382",
+            "size": 2584
+        },
+        "src/MutilLobby/data.luac": {
+            "md5": "2918099611",
+            "size": 6392
+        },
+        "src/MutilLobby/GameAlert.luac": {
+            "md5": "176016095",
+            "size": 980
+        },
+        "src/MutilLobby/GameFiles.luac": {
+            "md5": "3889003959",
+            "size": 15556
+        },
+        "src/MutilLobby/GameNet.luac": {
+            "md5": "935191180",
+            "size": 14804
+        },
+        "src/MutilLobby/GameTest.luac": {
+            "md5": "3492564003",
+            "size": 540
+        },
+        "src/MutilLobby/gfx.luac": {
+            "md5": "2015254196",
+            "size": 17920
+        },
+        "src/MutilLobby/Languages.luac": {
+            "md5": "2581407535",
+            "size": 2092
+        },
+        "src/MutilLobby/LhdItem.luac": {
+            "md5": "2008463883",
+            "size": 2244
+        },
+        "src/MutilLobby/MutilNet.luac": {
+            "md5": "2100836483",
+            "size": 18268
+        },
+        "src/MutilLobby/NewGameNet.luac": {
+            "md5": "327625863",
+            "size": 1464
+        },
+        "src/MutilLobby/NiuItem.luac": {
+            "md5": "2913125598",
+            "size": 2748
+        },
+        "src/MutilLobby/OnlineCtr.luac": {
+            "md5": "2625409437",
+            "size": 10676
+        },
+        "src/MutilLobby/OtherItem.luac": {
+            "md5": "2502819594",
+            "size": 9240
+        },
+        "src/MutilLobby/RoadData.luac": {
+            "md5": "4124743137",
+            "size": 2424
+        },
+        "src/MutilLobby/RouItem.luac": {
+            "md5": "4278479935",
+            "size": 4168
+        },
+        "src/MutilLobby/SelectLimit.luac": {
+            "md5": "2745982724",
+            "size": 1832
+        },
+        "src/MutilLobby/SicItem.luac": {
+            "md5": "81379556",
+            "size": 2612
+        },
+        "src/MutilLobby/TableList.luac": {
+            "md5": "1626436217",
+            "size": 6052
+        },
+        "src/MutilLobby/TimeCount.luac": {
+            "md5": "1501659619",
+            "size": 3740
+        },
+        "src/TableCommon/ActionHistory.luac": {
+            "md5": "2646791089",
+            "size": 1212
+        },
+        "src/TableCommon/Alert.luac": {
+            "md5": "2016009447",
+            "size": 1940
+        },
+        "src/TableCommon/BetArea.luac": {
+            "md5": "2335932970",
+            "size": 2244
+        },
+        "src/TableCommon/CardVo.luac": {
+            "md5": "3183345049",
+            "size": 1352
+        },
+        "src/TableCommon/CommandBase.luac": {
+            "md5": "1470593717",
+            "size": 2580
+        },
+        "src/TableCommon/CommandQueue.luac": {
+            "md5": "1433185864",
+            "size": 4872
+        },
+        "src/TableCommon/EventDispatcher.luac": {
+            "md5": "2765652819",
+            "size": 1796
+        },
+        "src/TableCommon/FlipCard.luac": {
+            "md5": "3798980994",
+            "size": 2044
+        },
+        "src/TableCommon/MoneyTick.luac": {
+            "md5": "766582795",
+            "size": 2076
+        },
+        "src/TableCommon/Move.luac": {
+            "md5": "27697553",
+            "size": 2264
+        },
+        "src/TableCommon/MoveChipBet.luac": {
+            "md5": "3695589819",
+            "size": 3320
+        },
+        "src/TableCommon/QueueEventManager.luac": {
+            "md5": "1514585562",
+            "size": 764
+        },
+        "src/TableCommon/ScrollChip.luac": {
+            "md5": "3706651380",
+            "size": 3360
+        },
+        "src/TableCommon/sound.luac": {
+            "md5": "1582683941",
+            "size": 4604
+        },
+        "src/TableCommon/TableAction.luac": {
+            "md5": "635394074",
+            "size": 668
+        },
+        "src/TableCommon/TNTBigWinNode.luac": {
+            "md5": "212782408",
+            "size": 4252
+        },
+        "src/TableCommon/TouchListener.luac": {
+            "md5": "3830049031",
+            "size": 2200
+        },
+        "src/utils/ActionUtils.luac": {
+            "md5": "3988199214",
+            "size": 1652
+        },
+        "src/utils/AlgorithmClass.luac": {
+            "md5": "1115597156",
+            "size": 608
+        },
+        "src/utils/DelayedCall.luac": {
+            "md5": "87002521",
+            "size": 2024
+        },
+        "src/utils/EleClippingAction.luac": {
+            "md5": "135303930",
+            "size": 2248
+        },
+        "src/utils/FrameEvent.luac": {
+            "md5": "3416895683",
+            "size": 948
+        },
+        "src/utils/GameBonus.luac": {
+            "md5": "450716999",
+            "size": 5876
+        },
+        "src/utils/GameMenu.luac": {
+            "md5": "3586033561",
+            "size": 9116
+        },
+        "src/utils/GLUtils.luac": {
+            "md5": "3002582817",
+            "size": 3956
+        },
+        "src/utils/Help232.luac": {
+            "md5": "1165187413",
+            "size": 4160
+        },
+        "src/utils/HelpChinaTown.luac": {
+            "md5": "30512344",
+            "size": 5136
+        },
+        "src/utils/HelpJixing.luac": {
+            "md5": "3977410861",
+            "size": 5068
+        },
+        "src/utils/HelpTNT.luac": {
+            "md5": "1392804392",
+            "size": 5616
+        },
+        "src/utils/HelpTruck.luac": {
+            "md5": "2855447105",
+            "size": 5068
+        },
+        "src/utils/juggler.luac": {
+            "md5": "3386149782",
+            "size": 2408
+        },
+        "src/utils/LoadImage.luac": {
+            "md5": "984066525",
+            "size": 2400
+        },
+        "src/utils/mathUtils.luac": {
+            "md5": "1827766982",
+            "size": 460
+        },
+        "src/utils/ModalDlg.luac": {
+            "md5": "1210967092",
+            "size": 4972
+        },
+        "src/utils/MoveClip.luac": {
+            "md5": "3883688035",
+            "size": 4372
+        },
+        "src/utils/MovieClip.luac": {
+            "md5": "3084402466",
+            "size": 3232
+        },
+        "src/utils/print_r.luac": {
+            "md5": "3580283682",
+            "size": 1204
+        },
+        "src/utils/PublicBtn.luac": {
+            "md5": "3253221530",
+            "size": 7632
+        },
+        "src/utils/PublicDlg.luac": {
+            "md5": "3625593693",
+            "size": 4972
+        },
+        "src/utils/PublicMenu.luac": {
+            "md5": "4275477333",
+            "size": 7996
+        },
+        "src/utils/Sound.luac": {
+            "md5": "2018290807",
+            "size": 1724
+        },
+        "src/utils/StringDef.luac": {
+            "md5": "1083004293",
+            "size": 3048
+        },
+        "src/utils/util.luac": {
+            "md5": "4005917213",
+            "size": 15856
+        }
+    }
+}
