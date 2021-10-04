@@ -1,0 +1,828 @@
+My di014:
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" 
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>Record</title> 
+  <link rel="stylesheet" type="text/css" href="sweetalert-1.1.3/sweetalert.css?version=2009151535"> 
+  <link rel="stylesheet" type="text/css" href="mobile-calendar-1.0.1/calendar.min.css?version=2009151535"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css?version=2009151535"> 
+  <script> 
+    /* 适配 rem */ 
+    (function (doc, win) { 
+      var docEl = doc.documentElement, 
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', 
+        recalc = function () { 
+          var clientWidth = docEl.clientWidth; 
+          if (!clientWidth) return; 
+          docEl.style.fontSize = (clientWidth / 13.34) + 'px'; 
+        }; 
+ 
+      if (!doc.addEventListener) return; 
+      win.addEventListener(resizeEvt, recalc, false); 
+      doc.addEventListener('DOMContentLoaded', recalc, false); 
+    })(document, window); 
+    // 日期插件与fast插件冲突暂时解决方法 
+    window.noFastClick = 0 
+  </script> 
+</head> 
+ 
+<body> 
+  <header class="record1"> 
+    <ul class="record-tab"> 
+      <li class="active">Set Score History</li> 
+      <li class="bg">BG Live Casino</li> 
+      <li class="evo">EVO Live Casino</li> 
+      <li class="sexy">Sexy Baccarat</li> 
+      <li>Gaming</li> 
+    </ul> 
+    <span class="close"></span> 
+  </header> 
+  <section class="record"> 
+    <div class="record-panel"> 
+      <div class="query-bar"> 
+        <label for="">date：</label> 
+        <input type="text" class="calendars" format="yyyy-MM-dd" placeholder="Please enter the inquiry date" /> 
+      </div> 
+      <table cellspacing="0"> 
+        <thead> 
+          <tr> 
+            <td>Number</td> 
+            <td>Fraction</td> 
+            <td>Before</td> 
+            <td>After</td> 
+            <td>Date</td> 
+          </tr> 
+        </thead> 
+        <tbody> 
+          <tr class="ee-tips"> 
+            <td colspan="5">No data was found!</td> 
+          </tr> 
+        </tbody> 
+      </table> 
+    </div> 
+    <div class="record-panel"> 
+      <div class="query-bar"> 
+        <label for="">date：</label> 
+        <input type="text" class="calendars" format="yyyy-MM-dd" placeholder="Please enter the inquiry date" /> 
+      </div> 
+      <table cellspacing="0"> 
+        <thead> 
+          <tr> 
+            <td>OrderId</td> 
+            <td>BetTime</td> 
+            <td>SettleTime</td> 
+            <td>Game Type/Game Code</td> 
+            <td>PlayType</td> 
+            <td>Bet</td> 
+            <td>Valie Bet</td> 
+            <td>Win</td> 
+            <td>Status</td> 
+          </tr> 
+        </thead> 
+        <tbody> 
+          <tr class="ee-tips"> 
+            <td colspan="9">No data was found!</td> 
+          </tr> 
+        </tbody> 
+      </table> 
+      <div class="page-box"> 
+        <p class="page-flg">Total 
+          <span class="page-total">0</span>page，control 
+          <span class="cur-page">0</span>page</p> 
+        <button class="prev">Previous</button> 
+        <button class="next">Next</button> 
+        <p style=" margin-left: .2rem">jump 
+          <input class="target-page" type="tel">page</p> 
+        <button class="go">GO</button> 
+      </div> 
+    </div> 
+ 
+    <!--EVO--> 
+    <div class="record-panel"> 
+      <div class="query-bar"> 
+        <label for="">date：</label> 
+        <input type="text" class="calendars" format="yyyy-MM-dd" placeholder="Please enter the inquiry date" /> 
+      </div> 
+      <table cellspacing="0"> 
+        <thead> 
+          <tr> 
+            <td style="width:120px;">BetCode</td> 
+            <td>BetTime</td> 
+            <td>SettleTime</td> 
+            <td style="width:120px;">GameName</td> 
+            <td>Bet</td> 
+            <td>Valie Bet</td> 
+            <td>Win</td> 
+          </tr> 
+        </thead> 
+        <tbody> 
+          <tr class="ee-tips"> 
+            <td colspan="9">No data was found!</td>
+
+</tr> 
+        </tbody> 
+      </table> 
+      <div class="page-box"> 
+        <p class="page-flg">Total 
+          <span class="page-total">0</span>page，control 
+          <span class="cur-page">0</span>page</p> 
+        <button class="prev">Previous</button> 
+        <button class="next">Next</button> 
+        <p style=" margin-left: .2rem">jump 
+          <input class="target-page" type="tel">page</p> 
+        <button class="go">GO</button> 
+      </div> 
+    </div> 
+ 
+    <!--SEXY--> 
+    <div class="record-panel"> 
+      <div class="query-bar"> 
+        <label for="">date：</label> 
+        <input type="text" class="calendars" format="yyyy-MM-dd" placeholder="Please enter the inquiry date" /> 
+      </div> 
+      <table cellspacing="0"> 
+        <thead> 
+          <tr> 
+            <td style="width:120px;">OrderId</td> 
+            <td>BetTime</td> 
+            <td>TableId</td> 
+            <td style="width:120px;">GameCode</td> 
+            <td>Bet</td> 
+            <td>Valie Bet</td> 
+            <td>Win</td> 
+          </tr> 
+        </thead> 
+        <tbody> 
+          <tr class="ee-tips"> 
+            <td colspan="9">No data was found!</td> 
+          </tr> 
+        </tbody> 
+      </table> 
+      <div class="page-box"> 
+        <p class="page-flg">Total 
+          <span class="page-total">0</span>page，control 
+          <span class="cur-page">0</span>page</p> 
+        <button class="prev">Previous</button> 
+        <button class="next">Next</button> 
+        <p style=" margin-left: .2rem">jump 
+          <input class="target-page" type="tel">page</p> 
+        <button class="go">GO</button> 
+      </div> 
+    </div> 
+ 
+ 
+ 
+    <div class="record-panel"> 
+      <div class="query-bar"> 
+        <label for="">date：</label> 
+        <input type="text" class="calendars" format="yyyy-MM-dd" placeholder="Please enter the inquiry date" /> 
+      </div> 
+      <table cellspacing="0"> 
+        <thead> 
+          <tr> 
+            <td>GameName</td> 
+            <td>TableID</td> 
+            <td>Bet</td> 
+            <td>Win</td> 
+            <td>BeginMoney</td> 
+            <td>EndMoney</td> 
+            <td>DateTime</td> 
+          </tr> 
+        </thead> 
+        <tbody> 
+          <tr class="ee-tips"> 
+            <td colspan="7">No data was found!</td> 
+          </tr> 
+        </tbody> 
+      </table> 
+      <div class="page-box"> 
+        <p class="page-flg">Total 
+          <span class="page-total">0</span>page，control 
+          <span class="cur-page">0</span>page</p> 
+        <button class="prev">Previous</button> 
+        <button class="next">Next</button> 
+        <p style=" margin-left: .2rem">jump 
+          <input class="target-page" type="tel">page</p> 
+        <button class="go">GO</button> 
+      </div> 
+    </div> 
+  </section> 
+  <script src="config/index.js?version=2009151535"></script> 
+  <script src="js/zepto.min.js?version=2009151535"></script> 
+  <script src="fastclick-1.0.6/fastclick.min.js?version=2009151535"></script> 
+  <script src="sweetalert-1.1.3/sweetalert.min.js?version=2009151535"></script> 
+  <script src="mobile-calendar-1.0.1/calendar.min.js?version=2009151535"></script> 
+  <script src="js/public.js?version=2009151535"></script> 
+  <script> 
+    $(function () { 
+      var recordPanel = $('.record-panel'), 
+        index = -1, 
+        $panel = null, 
+        myDate = new Date(), 
+        y = myDate.getFullYear(), 
+        m = myDate.getMonth() + 1, 
+        d = myDate.getDate(); 
+ 
+      // 真人视讯总页数 
+      var totalPage = 0; 
+      // 当前页码 
+      var curPageIndex = 1; 
+ 
+      // evo总页码 
+      var evoTTpage = 0; 
+      // 当前页码 
+      var evoCurPage = 1; 
+ 
+      // 性感百家乐总页数 
+      var sexyTTpage = 0; 
+      // 性感百家乐当前页码 
+      var sexyCurPage = 1; 
+ 
+      // 电子游戏总页数 
+      var gamingTotalPage = 0; 
+      // 当前页码 
+      var gamingCurPageIndex = 1; 
+ 
+      if(window.location.href.indexOf('sn=ld00') > -1){ 
+        $('li.sexy').hide(); 
+      }else{ 
+        $('li.bg').hide(); 
+        $('li.evo').hide(); 
+      } 
+ 
+      $('.close').click(function (e) { 
+        if ($(e.target)[0
+
+] != $(this)[0]) { 
+          return false; 
+        } 
+        closeWin(); 
+      }); 
+ 
+      $('.record-panel .calendars').change(function () { 
+        if (index == 0) { 
+          fnRecord($panel); 
+        } else if (index == 1) { 
+          publicGameOrder(curPageIndex, $panel); 
+        } else if (index == 2) { 
+          publicEvoOrder(evoCurPage, $panel); 
+        } else if (index == 3) { 
+          publicSexyOrder(sexyCurPage, $panel); 
+        } else if (index == 4) { 
+          fnGaming(gamingCurPageIndex, $panel); 
+        } 
+      }); 
+ 
+      $('.record-tab li').click(function (e) { 
+        var $this = $(this); 
+        if ($(e.target)[0] != $this[0]) { 
+          return false; 
+        } 
+        index = $this.index(); 
+        $panel = recordPanel.eq(index); 
+        $this.addClass('active').siblings('li').removeClass('active'); 
+        $panel.show().siblings('.record-panel').hide(); 
+        if (!$('.calendars', $panel).val()) { 
+          $('.calendars', $panel).val(y + '-' + numberCompletion(m) + '-' + numberCompletion(d)) 
+        } 
+        // $('.calendars', $panel).val(y + '-' + numberCompletion(m) + '-' + numberCompletion(d)) 
+        if (index == 0) { 
+          fnRecord($panel); 
+        } else if (index == 1) { 
+          // 第一页数据 
+          publicGameOrder(1, $panel); 
+ 
+          // 点击下一页 
+          $(document).off().on('click','.next', $panel,function(e){ 
+            if (!$(e.target).hasClass('next')) { 
+              return false; 
+            } 
+            // 小于总页数才能翻页 
+            if (curPageIndex < totalPage) { 
+              curPageIndex++; 
+              publicGameOrder(curPageIndex, $panel); 
+            } 
+          }); 
+ 
+          // 点击上一页 
+          $('.page-box').off().on('click','.prev', $panel,function(e){ 
+            if (!$(e.target).hasClass('prev')) { 
+              return false; 
+            } 
+            if (curPageIndex > 1) { 
+              curPageIndex--; 
+              publicGameOrder(curPageIndex, $panel); 
+            } 
+          }); 
+ 
+          // 跳转分页 
+          $('.go', $panel).click(function (e) { 
+            if (!$(e.target).hasClass('go')) { 
+              return false; 
+            } 
+            var targetPage = $('.target-page', $panel).val(); 
+ 
+            if (targetPage && targetPage <= totalPage) { 
+              publicGameOrder(targetPage, $panel); 
+            } 
+ 
+            $('.target-page', $panel).val(''); 
+          }); 
+        } else if (index == 2) { // EVO视讯 
+          // 第一页数据 
+          publicEvoOrder(1, $panel); 
+ 
+          // 点击下一页 
+          $(document).off().on('click','.next', $panel,function(e){ 
+            if (!$(e.target).hasClass('next')) { 
+              return false; 
+            } 
+            // 小于总页数才能翻页 
+            if (evoCurPage < evoTTpage) { 
+              evoCurPage++; 
+              publicEvoOrder(evoCurPage, $panel); 
+            } 
+          }); 
+ 
+          // 点击上一页 
+          $('.page-box').off().on('click','.prev', $panel,function(e){ 
+            if (!$(e.target).hasClass('prev')) { 
+              return false; 
+            } 
+            if (evoCurPage > 1) { 
+              evoCurPage--; 
+              publicEvoOrder(evoCurPage, $panel); 
+            } 
+          }); 
+ 
+          // 跳转分页 
+          $('.go', $panel).click(function (e) { 
+            if (!$(e.target).hasClass('go')) { 
+              return false; 
+            } 
+            var targetPage = $('.target-page', $panel).val(); 
+ 
+            if (targetPage && targetPage <= evoTTpage) { 
+              publicEvoOrder(targetPage, $panel); 
+            } 
+ 
+            $('.target-page', $panel).val(''); 
+          }); 
+        }else if(index == 3){   // 性感百家乐 
+          publicSexyOrder(1, $panel); 
+ 
+          // 点击下一页 
+ 
+          $(document).off().on('click','.next', $panel,function(e){ 
+            if (!$(e.target).hasClass('next')) { 
+              return false; 
+            } 
+            // 小于总页数才能翻页 
+            if (sexyCurPage < sexyTTpage) { 
+              sexyCurPage++; 
+              publicSexyOrder(sexyCurPage, $panel);
+
+} 
+          }); 
+ 
+          // 点击上一页 
+          $('.page-box').off().on('click','.prev', $panel,function(e){ 
+            if (!$(e.target).hasClass('prev')) { 
+              return false; 
+            } 
+            if (sexyCurPage > 1) { 
+              sexyCurPage--; 
+              publicSexyOrder(sexyCurPage, $panel); 
+            } 
+          }); 
+ 
+          // 跳转分页 
+          $('.go', $panel).click(function (e) { 
+            if (!$(e.target).hasClass('go')) { 
+              return false; 
+            } 
+            var targetPage = $('.target-page', $panel).val(); 
+ 
+            if (targetPage && targetPage <= sexyTTpage) { 
+              publicSexyOrder(targetPage, $panel); 
+            } 
+ 
+            $('.target-page', $panel).val(''); 
+          }); 
+        } else if (index == 4) { 
+          // 第一页数据 
+          fnGaming(1, $panel); 
+ 
+          // 点击下一页 
+          $(document).off().on('click','.next', $panel,function(e){ 
+            if (!$(e.target).hasClass('next')) { 
+              return false; 
+            } 
+            // 小于总页数才能翻页 
+            if (gamingCurPageIndex < gamingTotalPage) { 
+              gamingCurPageIndex++; 
+              fnGaming(gamingCurPageIndex, $panel); 
+            } 
+          }); 
+ 
+          // 点击上一页 
+          $('.page-box').off().on('click','.prev', $panel,function(e){ 
+            if (!$(e.target).hasClass('prev')) { 
+              return false; 
+            } 
+            if (gamingCurPageIndex > 1) { 
+              gamingCurPageIndex--; 
+              fnGaming(gamingCurPageIndex, $panel); 
+            } 
+          }); 
+ 
+          // 跳转分页 
+          $('.go', $panel).click(function (e) { 
+            if (!$(e.target).hasClass('go')) { 
+              return false; 
+            } 
+            var targetPage = $('.target-page', $panel).val(); 
+ 
+            if (targetPage && targetPage <= gamingTotalPage) { 
+              fnGaming(targetPage, $panel); 
+            } 
+ 
+            $('.target-page', $panel).val(''); 
+          }); 
+        } 
+      }); 
+      $('.record-tab li').eq(0).trigger('click'); 
+ 
+      // 玩家进分记录 
+      function fnRecord($ele) { 
+        var paramList = { 
+          startTime: $('.calendars', $ele).val() + ' 00:00:00', 
+          endTime: $('.calendars', $ele).val() + ' 23:59:59' 
+        }; 
+ 
+        swal({ 
+          title: '', 
+          text: '<div class="rectangle-bounce">' + 
+            ' <div class="rect1"></div>' + 
+            ' <div class="rect2"></div>' + 
+            ' <div class="rect3"></div>' + 
+            ' <div class="rect4"></div>' + 
+            ' <div class="rect5"></div>' + 
+            '</div>', 
+          html: true, 
+          showConfirmButton: false, 
+          confirmButtonText: false, 
+          customClass: 'swal-loading' 
+        }); 
+        getAjaxFun('cloud.mega.user.set.score.list', 'post', paramList, function (data) { 
+          swal.close(); 
+          $ele.find('tbody tr.data-row').remove(); 
+          if (!data.error && data.result) { 
+            var entryExitData = data.result, entryExitTrHtml = ''; 
+ 
+            if (entryExitData) { 
+              var j = 0; 
+              for (var i in entryExitData) { 
+                if (entryExitData.hasOwnProperty(i)) { 
+                  entryExitTrHtml += '<tr class="data-row">' 
+                    + ' <td>' + (j + 1) + '</td>' 
+                    + ' <td>' + fnValueEmptyHandle(entryExitData[j].scoreNum) + '</td>' 
+                    + ' <td>' + fnValueEmptyHandle(entryExitData[j].beforeScoreNum) + '</td>' 
+                    + ' <td>' + fnValueEmptyHandle(entryExitData[j].afterScoreNum) + '</td>' 
+                    + ' <td>' + fnValueEmptyHandle(entryExitData[j].createTime) + '</td>' 
+                    + '</tr>'; 
+                } 
+                j++ 
+              } 
+              $('.ee-tips', $ele).hide(); 
+              $ele.find('tbody').html(entryExitTrHtml); 
+            } else { 
+              $('.ee-tips', $ele).show(); 
+            } 
+          } else { 
+            $('.ee-tips', $ele).show(); 
+          } 
+ 
+        }, function (xhr, textSta
+
+tus) { 
+          if (textStatus == 'timeout') { 
+            swal({ 
+              title: 'Network delay, please try again', 
+              timer: 1000 
+            }); 
+            $('.ee-tips', $ele).show(); 
+          } 
+        }); 
+      } 
+      // 性感百家乐查询 
+      function publicSexyOrder(curPage, $ele) { 
+        $('.page-box', $ele).hide(); 
+        var paramList = { 
+          startTime: $('.calendars', $ele).val() + ' 00:00:00', 
+          endTime: $('.calendars', $ele).val() + ' 23:59:59', 
+          pageIndex: curPage, 
+          origin: 3, 
+          pageSize: 20 
+        }; 
+        swal({ 
+          title: '', 
+          text: '<div class="rectangle-bounce">' + 
+            ' <div class="rect1"></div>' + 
+            ' <div class="rect2"></div>' + 
+            ' <div class="rect3"></div>' + 
+            ' <div class="rect4"></div>' + 
+            ' <div class="rect5"></div>' + 
+            '</div>', 
+          html: true, 
+          showConfirmButton: false, 
+          confirmButtonText: false, 
+          customClass: 'swal-loading' 
+        }); 
+        swal.close(); 
+        getAjaxFun('cloud.mega.video.order.page', 'post', paramList, function (data) { 
+          $ele.find('tbody tr.data-row').remove(); 
+          if (!data.error && data.result && data.result.items && data.result.items.length >= 1) { 
+            sexyTTpage = Math.ceil(data.result.total / data.result.pageSize); 
+            sexyCurPage = data.result.pageIndex; 
+            $('.page-total', $ele).text(sexyTTpage); 
+            $('.cur-page', $ele).text(sexyCurPage); 
+            sexyCurPage <= 1 ? $('.prev', $ele).hide() : $('.prev', $ele).show(); 
+            sexyCurPage >= sexyTTpage ? $('.next', $ele).hide() : $('.next', $ele).show(); 
+            var _htm = ''; 
+            for (var i = 0; i < data.result.items.length; i++) { 
+              var gName = data.result.items[i].gameName; 
+              if (!gName) { 
+                gName = data.result.items[i].gameNameEn; 
+              } 
+              _htm += '<tr class="data-row">' 
+                + ' <td style="width:120px;word-break: break-all;word-wrap: break-word;">' + fnValueEmptyHandle(data.result.items[i].orderId) + '</td>' 
+                + ' <td>' + data.result.items[i].orderTimeBj.split(' ')[0] + '<br>' + data.result.items[i].orderTimeBj.split(' ')[1] + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].tableId) + '</td>' 
+                + ' <td style="width:120px;word-break: break-all;word-wrap: break-word;">' + fnValueEmptyHandle(data.result.items[i].issueId) + '</td>' 
+ 
+                + ' <td>' + fnValueEmptyHandle(Math.abs(data.result.items[i].bAmount)) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].validBet) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].payment) + '</td>' 
+                + '</tr>'; 
+            } 
+            $('.ee-tips', $ele).hide(); 
+            $ele.find('tbody').append(_htm); 
+            $('.page-box', $ele).show(); 
+          } else { 
+            $('.ee-tips', $ele).show(); 
+            sexyTTpage = 0; 
+            sexyCurPage = 1; 
+            $('.page-total', $ele).text(sexyTTpage); 
+            $('.cur-page', $ele).text(sexyCurPage); 
+          } 
+        }, function (xhr, textStatus) { 
+          if (textStatus == 'timeout') { 
+            swal({ 
+              title: '网络延迟，请重试', 
+              timer: 1000 
+            }); 
+            $('.ee-tips', $ele).show(); 
+            sexyTTpage = 0; 
+            sexyCurPage = 1; 
+            $('.page-total', $ele).text(sexyTTpage); 
+            $('.cur-page', $ele).text(sexyCurPage); 
+          } 
+        }); 
+      } 
+      // EVO游戏查询 
+      function publicEvoOrder(curPage, $ele) { 
+        $('.page-box', $ele).hide(); 
+        var paramList = { 
+          startTime: $('.calendars', $ele).val() + ' 00:00:00', 
+          endTime: $('.calendars', $ele).val() + ' 23:59:59', 
+          pageIndex: curPage, 
+          origin: 2, 
+          pageSize: 20 
+        }; 
+        swal({ 
+          title: '',
+
+text: '<div class="rectangle-bounce">' + 
+            ' <div class="rect1"></div>' + 
+            ' <div class="rect2"></div>' + 
+            ' <div class="rect3"></div>' + 
+            ' <div class="rect4"></div>' + 
+            ' <div class="rect5"></div>' + 
+            '</div>', 
+          html: true, 
+          showConfirmButton: false, 
+          confirmButtonText: false, 
+          customClass: 'swal-loading' 
+        }); 
+        getAjaxFun('cloud.mega.video.order.page', 'post', paramList, function (data) { 
+          swal.close(); 
+          $ele.find('tbody tr.data-row').remove(); 
+          if (!data.error && data.result && data.result.items && data.result.items.length >= 1) { 
+            evoTTpage = Math.ceil(data.result.total / data.result.pageSize); 
+            evoCurPage = data.result.pageIndex; 
+            $('.page-total', $ele).text(evoTTpage); 
+            $('.cur-page', $ele).text(evoCurPage); 
+            evoCurPage <= 1 ? $('.prev', $ele).hide() : $('.prev', $ele).show(); 
+            evoCurPage >= evoTTpage ? $('.next', $ele).hide() : $('.next', $ele).show(); 
+            var _htm = ''; 
+            for (var i = 0; i < data.result.items.length; i++) { 
+              var gName = data.result.items[i].gameNameEn; 
+              _htm += '<tr class="data-row">' 
+                + ' <td style="width:120px;word-break: break-all;word-wrap: break-word;">' + fnValueEmptyHandle(data.result.items[i].orderId) + '</td>' 
+                + ' <td>' + data.result.items[i].orderTimeBj.split(' ')[0] + '<br/>' + data.result.items[i].orderTimeBj.split(' ')[1] + '</td>' 
+                + ' <td>' + data.result.items[i].recalcuTimeBj.split(' ')[0] + '<br/>' + data.result.items[i].recalcuTimeBj.split(' ')[1] + '</td>' 
+                + ' <td style="width:120px;word-break: break-all;word-wrap: break-word;">' + fnValueEmptyHandle(gName) + '</td>' 
+ 
+                + ' <td>' + fnValueEmptyHandle(Math.abs(data.result.items[i].bAmount)) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].validBet) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].payment) + '</td>' 
+                + '</tr>'; 
+            } 
+            $('.ee-tips', $ele).hide(); 
+            $ele.find('tbody').append(_htm); 
+            $('.page-box', $ele).show(); 
+          } else { 
+            $('.ee-tips', $ele).show(); 
+            evoTTpage = 0; 
+            evoCurPage = 1; 
+            $('.page-total', $ele).text(evoTTpage); 
+            $('.cur-page', $ele).text(evoCurPage); 
+          } 
+        }, function (xhr, textStatus) { 
+          if (textStatus == 'timeout') { 
+            swal({ 
+              title: '网络延迟，请重试', 
+              timer: 1000 
+            }); 
+            $('.ee-tips', $ele).show(); 
+            evoTTpage = 0; 
+            evoCurPage = 1; 
+            $('.page-total', $ele).text(evoTTpage); 
+            $('.cur-page', $ele).text(evoCurPage); 
+          } 
+        }); 
+      } 
+      // 真人视讯查询 
+      function publicGameOrder(curPage, $ele) { 
+        $('.page-box', $ele).hide(); 
+        var paramList = { 
+          startTime: $('.calendars', $ele).val() + ' 00:00:00', 
+          endTime: $('.calendars', $ele).val() + ' 23:59:59', 
+          pageIndex: curPage, 
+          pageSize: 20 
+        }; 
+ 
+        swal({ 
+          title: '', 
+          text: '<div class="rectangle-bounce">' + 
+            ' <div class="rect1"></div>' + 
+            ' <div class="rect2"></div>' + 
+            ' <div class="rect3"></div>' + 
+            ' <div class="rect4"></div>' + 
+            ' <div class="rect5"></div>' + 
+            '</div>', 
+          html: true, 
+          showConfirmButton: false, 
+          confirmButtonText: false, 
+          customClass: 'swal-loading' 
+        }); 
+        getAjaxFun('cloud.mega.video.order.page', 'post', paramList, function (data) { 
+          swal.close(); 
+          $ele.find('tbody tr.data-row').remove(); 
+          if (!data.error && data.result && data.result.items && data.result.items.length >= 1) { 
+            totalPage = Math.ceil(
+
+data.result.total / data.result.pageSize); 
+            curPageIndex = data.result.pageIndex; 
+            $('.page-total', $ele).text(totalPage); 
+            $('.cur-page', $ele).text(curPageIndex); 
+            curPageIndex <= 1 ? $('.prev', $ele).hide() : $('.prev', $ele).show(); 
+            curPageIndex >= totalPage ? $('.next', $ele).hide() : $('.next', $ele).show(); 
+            var _htm = ''; 
+            for (var i = 0; i < data.result.items.length; i++) { 
+              _htm += '<tr class="data-row">' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].orderId) + '</td>' 
+                + ' <td>' + data.result.items[i].orderTimeBj.split(' ')[0] + '<br/>' + data.result.items[i].orderTimeBj.split(' ')[1] + '</td>' 
+                + ' <td>' + data.result.items[i].lastUpdateTimeBj.split(' ')[0] + '<br/>' + data.result.items[i].lastUpdateTimeBj.split(' ')[1] + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].gameNameEn) + '<br/>' + fnValueEmptyHandle(data.result.items[i].issueId) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].playNameEn) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(Math.abs(data.result.items[i].bAmount)) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].validBet) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].payment) + '</td>' 
+                + ' <td>' + gamelogStatus(data.result.items[i].orderStatus, 'en') + '</td>' 
+                + '</tr>'; 
+            } 
+            $('.ee-tips', $ele).hide(); 
+            $ele.find('tbody').append(_htm); 
+            $('.page-box', $ele).show(); 
+          } else { 
+            $('.ee-tips', $ele).show(); 
+            totalPage = 0; 
+            curPageIndex = 1; 
+            $('.page-total', $ele).text(totalPage); 
+            $('.cur-page', $ele).text(curPageIndex); 
+          } 
+        }, function (xhr, textStatus) { 
+          if (textStatus == 'timeout') { 
+            swal({ 
+              title: 'Network delay, please try again', 
+              timer: 1000 
+            }); 
+            $('.ee-tips', $ele).show(); 
+            totalPage = 0; 
+            curPageIndex = 1; 
+            $('.page-total', $ele).text(totalPage); 
+            $('.cur-page', $ele).text(curPageIndex); 
+          } 
+        }); 
+      } 
+      // 电子游戏查询 
+      function fnGaming(curPage, $ele) { 
+        $('.page-box', $ele).hide(); 
+        var paramList = { 
+          startTime: $('.calendars', $ele).val() + ' 00:00:00', 
+          endTime: $('.calendars', $ele).val() + ' 23:59:59', 
+          pageIndex: curPage, 
+          pageSize: 20 
+        }; 
+ 
+        swal({ 
+          title: '', 
+          text: '<div class="rectangle-bounce">' + 
+            ' <div class="rect1"></div>' + 
+            ' <div class="rect2"></div>' + 
+            ' <div class="rect3"></div>' + 
+            ' <div class="rect4"></div>' + 
+            ' <div class="rect5"></div>' + 
+            '</div>', 
+          html: true, 
+          showConfirmButton: false, 
+          confirmButtonText: false, 
+          customClass: 'swal-loading' 
+        }); 
+        getAjaxFun('cloud.mega.game.order.page', 'post', paramList, function (data) { 
+          swal.close(); 
+          $ele.find('tbody tr.data-row').remove(); 
+          if (!data.error && data.result && data.result.items && data.result.items.length >= 1) { 
+            gamingTotalPage = data.result.totalPage; 
+            gamingCurPageIndex = data.result.pageIndex; 
+            $('.page-total', $ele).text(gamingTotalPage); 
+            $('.cur-page', $ele).text(gamingCurPageIndex); 
+            gamingCurPageIndex <= 1 ? $('.prev', $ele).hide() : $('.prev', $ele).show(); 
+            gamingCurPageIndex >= gamingTotalPage ? $('.next', $ele).hide() : $('.next', $ele).show(); 
+            var _htm = ''; 
+            for (var i = 0; i < data.result.items.length; i++) { 
+              _htm += '<tr class="data-row">' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].gameName) + '</td>'
+
++ ' <td>' + fnValueEmptyHandle(data.result.items[i].tableId) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].bet) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].win) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].beginBalance) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].endBalance) + '</td>' 
+                + ' <td>' + fnValueEmptyHandle(data.result.items[i].createTime) + '</td>' 
+                + '</tr>'; 
+            } 
+            $('.ee-tips', $ele).hide(); 
+            $ele.find('tbody').append(_htm); 
+            $('.page-box', $ele).show(); 
+          } else { 
+            $('.ee-tips', $ele).show(); 
+            gamingTotalPage = 0; 
+            gamingCurPageIndex = 1; 
+            $('.page-total', $ele).text(gamingTotalPage); 
+            $('.cur-page', $ele).text(gamingCurPageIndex); 
+          } 
+        }, function (xhr, textStatus) { 
+          if (textStatus == 'timeout') { 
+            swal({ 
+              title: 'Network delay, please try again', 
+              timer: 1000 
+            }); 
+            $('.ee-tips', $ele).show(); 
+            gamingTotalPage = 0; 
+            gamingCurPageIndex = 1; 
+            $('.page-total', $ele).text(gamingTotalPage); 
+            $('.cur-page', $ele).text(gamingCurPageIndex); 
+          } 
+        }); 
+      } 
+ 
+      function numberCompletion(number) { 
+        return number >= 10 ? number : '0' + number; 
+      } 
+ 
+      function fnValueEmptyHandle(val) { 
+        return (val === null || val === undefined || val === '') ? '-' : val; 
+      } 
+    }); 
+  </script> 
+</body> 
+ 
+</html>
